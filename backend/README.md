@@ -109,8 +109,3 @@ The option can be:
 - release: to update the release version
   - also add `--tag` to create a git tag when releasing
 
-## Contributors
-- Atishaya Jain
-- Ajeem Ahmed
-- Sidhhant Gudwani
-- Tanmay Gupta
