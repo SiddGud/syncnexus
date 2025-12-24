@@ -1,96 +1,122 @@
-# SyncNexus
+SyncNexus
 
-# 
+SyncNexus is a full-stack platform designed to connect job seekers with employers efficiently. It addresses inefficiencies in traditional job searching and task assignment, providing a centralized system for job posting, task management, and workforce tracking.
 
-# SyncNexus is a full-stack platform designed to streamline the connection between employers and job seekers by reducing inefficiencies, improving transparency, and enhancing workforce management.
+🚀 Features
 
-# 
+Centralized job and task posting system
 
-# The system provides a centralized solution for job posting, task assignment, secure authentication, and real-time data handling.
+Efficient job discovery and application workflow
 
-# 
+Secure user authentication
 
-# Key Features:
+Employee location path tracking for workforce monitoring
 
-# \- Centralized job and task posting system
+Seamless frontend-backend communication via REST APIs
 
-# \- Efficient job discovery and application workflow
+Mobile-friendly interface for on-the-go management
 
-# \- Secure authentication using Firebase
+🖥️ Tech Stack
+Frontend
 
-# \- Employee location path tracking for workforce monitoring
+Framework: Flutter
 
-# \- Seamless frontend-backend communication via REST APIs
+Language: Dart
 
-# 
+State Management: Provider / Bloc
 
-# Tech Stack:
+HTTP Requests: Dio / http package
 
-# Frontend:
+Navigation: GoRouter
 
-# \- Flutter
+Authentication: OAuth 2.0
 
-# \- Firebase Authentication
+Backend
 
-# 
+Language: Python
 
-# Backend:
+Framework: FastAPI
 
-# \- Python
+Database: PostgreSQL (Google Cloud SQL)
 
-# \- Firebase services
+Authentication: Firebase Authentication
 
-# 
+Deployment: Google Cloud Run
 
-# Database:
+🏗️ Architecture
 
-# \- Google Cloud SQL (PostgreSQL)
+Flutter frontend communicates with FastAPI backend via HTTP APIs
 
-# 
+Firebase Authentication ensures secure access
 
-# Architecture Overview:
+Backend handles request processing and interacts with PostgreSQL database
 
-# \- Flutter frontend communicates with backend through HTTP APIs
+Cloud-hosted SQL database ensures reliability and low latency
 
-# \- Firebase Authentication manages secure user access
+📂 Project Structure
+syncnexus/
+├── frontend/          # Flutter mobile app
+├── backend/           # FastAPI backend
+├── demo/              # Demo video and screenshots
+└── README.md          # This file
 
-# \- Backend handles request processing and database interactions
+Backend Structure (FastAPI)
+backend/
+├── auth/              # Authentication modules
+├── client/            # Firebase and database clients
+├── db/                # Database schema & models
+│   ├── base.py
+│   ├── tables/
+│   └── views/
+├── responses/         # Request/response schemas
+├── routers/           # API endpoints
+├── services/          # Business logic
+└── main.py            # Application entry point
 
-# \- Cloud-hosted SQL database ensures reliability and low latency
+Frontend Structure (Flutter)
+frontend/
+├── lib/screens/       # App screens (Home, Jobs, Tasks)
+├── lib/widgets/       # Reusable widgets
+├── lib/providers/     # State management
+├── lib/services/      # API requests & authentication
+└── lib/utils/         # Utility functions
 
-# 
+📌 Setup Instructions
+Backend
 
-# Demo:
+Set up virtual environment and dependencies
 
-# Demo video link:
+Add Firebase and Google Cloud credentials to keys folder
 
-https://youtu.be/TEWc9LUVjVw?si=tELv3GgJ72YgjuVl
+Run database migrations
 
-===
+Start backend server
 
-# Project Structure:
+Frontend
 
-# syncnexus/
+Install Flutter SDK
 
-# ├── frontend/
+Install dependencies:
 
-# ├── backend/
-
-# ├── demo/
-
-# └── README.txt
-
-# 
-
-# Skills Demonstrated:
-
-# Flutter · Python · Firebase · PostgreSQL · Docker · Cloud Architecture · API Design
-
-# 
-
-# Timeline:
-
-# Jan 2024 – Feb 2024
+flutter pub get
 
 
+Set environment variables (API base URL, OAuth keys)
 
+Run app on emulator or device:
+
+flutter run
+
+🌐 Backend API
+
+Base URL: https://your-backend-url.com (replace with your hosted backend)
+
+API documentation is included in the backend repo
+
+🎥 Demo
+
+(https://youtu.be/TEWc9LUVjVw?si=tELv3GgJ72YgjuVl)
+
+🧠 Skills Demonstrated
+
+Flutter · Dart · Python · FastAPI · REST APIs · Firebase Authentication · PostgreSQL · Cloud Deployment · Docker · Cloud Architecture · API Design
