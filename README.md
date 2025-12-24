@@ -42,14 +42,12 @@
 ---
 
 ## 📂 Project Structure
-
+```
 syncnexus/
 ├── frontend/ # Flutter mobile app
 ├── backend/ # FastAPI backend
 ├── demo/ # Demo video and screenshots
 └── README.md # This file
-
-### Backend Structure (FastAPI)
 
 backend/
 ├── auth/ # Authentication modules
@@ -63,15 +61,13 @@ backend/
 ├── services/ # Business logic
 └── main.py # Application entry point
 
-### Frontend Structure (Flutter)
-
 frontend/
 ├── lib/screens/ # App screens (Home, Jobs, Tasks)
 ├── lib/widgets/ # Reusable widgets
 ├── lib/providers/ # State management
 ├── lib/services/ # API requests & authentication
 └── lib/utils/ # Utility functions
-
+```
 ---
 
 ## 📌 Setup Instructions
