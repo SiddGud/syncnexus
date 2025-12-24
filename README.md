@@ -84,14 +84,16 @@ frontend/
 flutter pub get
 Set environment variables (API base URL, OAuth keys)
 
+```
 Run the app on emulator or device:
-
 flutter run
 🌐 Backend API
 API documentation is included in the backend repo
-
+```
+---
 🎥 Demo
 Watch Demo Video: https://youtu.be/TEWc9LUVjVw?si=tELv3GgJ72YgjuVl 
+---
 
 🧠 Skills Demonstrated
 Flutter · Dart · Python · FastAPI · REST APIs · Firebase Authentication · PostgreSQL · Cloud Deployment · Docker · Cloud Architecture · API Design
